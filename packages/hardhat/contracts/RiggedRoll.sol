@@ -6,7 +6,6 @@ import "./DiceGame.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract RiggedRoll is Ownable {
-
     DiceGame public diceGame;
 
     constructor(address payable diceGameAddress) {
@@ -15,10 +14,11 @@ contract RiggedRoll is Ownable {
 
     //Add withdraw function to transfer ether from the rigged contract to an address
 
-
     //Add riggedRoll() function to predict the randomness in the DiceGame contract and only roll when it's going to be a winner
-
+    function riggedRoll() public {
+        require(address(this).balance >= .002 ether, "insufficient balance");
+    }
 
     //Add receive() function so contract can receive Eth
-    
+    receive() external payable {}
 }
