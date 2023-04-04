@@ -1,3 +1,20 @@
+# Web3 Dice game
+Web3 dice game for decentralized lottery and gambling
+
+### 🧩 Tech stack:
+- ReactJS
+- Hardhat 
+- Next.js
+- Ethers.js
+- Chainlink VRF
+
+🧪 Tested with:
+- Slither
+- Echidna
+
+### 🗺️ Design Documentation
+TBA
+
 Randomness is tricky on a public deterministic blockchain. The block hash is an easy to use, but very weak form of randomness. This challenge will give you an example of a contract using block hash to create random numbers. This randomness is exploitable. Other, stronger forms of randomness include commit/reveal schemes, oracles, or VRF from Chainlink.
 
 👍 One day soon, randomness will be built into the Ethereum protocol!
